@@ -9,7 +9,7 @@ $(document).ready(function() {
         // Regex to find only the access token from the URL
 
         if (accessToken === '') {
-            var tokenMatches = window.location.hash.match(/access_token=(.*)&token_type=*/);
+            var tokenMatches = window.location.hash.match(/access_token=(.*));
             if (tokenMatches) {
                 accessToken = tokenMatches[1];
                 // Store the values in session storage that will be cleared when the browser closes
